@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Vistas\Insumos\AdministradorInsumos.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Insumos\EditorInsumo.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\MateriasPrimas\AdministradorMateriasPrimas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\MateriasPrimas\EditorMateriaPrima.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Recetas\AdministradorRecetas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Vistas\Recetas\EditorRecetas.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Vistas\Insumos\AdministradorInsumos.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Insumos\EditorInsumo.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\MateriasPrimas\AdministradorMateriasPrimas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\MateriasPrimas\EditorMateriaPrima.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Recetas\AdministradorRecetas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Vistas\Recetas\EditorRecetas.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

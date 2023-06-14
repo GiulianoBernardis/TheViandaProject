@@ -1,0 +1,26 @@
+﻿<mah:MetroWindow x:Class="TheViandaProject.Vistas.MateriasPrimas.AdministradorMateriasPrimas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:mah="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns:local="clr-namespace:TheViandaProject.Vistas.MateriasPrimas"
+        mc:Ignorable="d"
+        Title="AdministradorMateriasPrimas" Height="450" Width="800">
+    <Grid>
+        <DataGrid x:Name="dtgMateriasPrimas" Margin="0,42,0,0" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Nombre" Width="*" Binding="{Binding Nombre}"/>
+                <DataGridTextColumn Header="Cantidad" Width="*" Binding="{Binding Cantidad}"/>
+                <DataGridTextColumn Header="Unidad de medida" Width="*" Binding="{Binding UnidadDeMedida}"/>
+                <DataGridTextColumn Header="Costo" Width="120" Binding="{Binding Costo}"/>
+                <DataGridTextColumn Header="Deshabilitado" Width="120" Binding="{Binding Deshabilitado}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button Content="Registrar nuevo" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="127" Click="NuevaMateriaPrima"/>
+        <Button Content="Editar" HorizontalAlignment="Left" Margin="142,10,0,0" VerticalAlignment="Top" Width="127" Click="EditarMateriaPrima"/>
+        <Button Content="Habilitar" HorizontalAlignment="Left" Margin="274,10,0,0" VerticalAlignment="Top" Width="127" Click="Habilitar"/>
+        <Button Content="Deshabilitar" HorizontalAlignment="Left" Margin="406,10,0,0" VerticalAlignment="Top" Width="127" Click="Deshabilitar"/>
+
+    </Grid>
+</mah:MetroWindow>
